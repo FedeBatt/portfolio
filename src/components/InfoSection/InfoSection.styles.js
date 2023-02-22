@@ -4,7 +4,6 @@ export const InfoContainer = styled.div`
     color: #fff;
     background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
