@@ -20,6 +20,7 @@ const Projects = ({ id }) => {
                               key={item?.id}
                               title={item?.title}
                               description={item?.description}
+                              pageUrl={item?.pageUrl}
                           />
                       ))
                     : null}

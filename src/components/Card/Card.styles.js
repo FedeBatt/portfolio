@@ -1,6 +1,7 @@
 import styled from "styled-components";
-
-export const CardWrapper = styled.div``;
+import { FaPlus } from "react-icons/fa";
+import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const CardContainer = styled.div`
     border-radius: 25px;
@@ -9,6 +10,10 @@ export const CardContainer = styled.div`
     flex-direction: column;
     min-height: 450px;
     width: 320px;
+
+    @media screen and (max-width: 768px) {
+        min-height: 480px;
+    }
 `;
 
 export const ImageContainer = styled.div`
@@ -57,15 +62,24 @@ export const Overlay = styled.div`
 export const CardContent = styled.div`
     align-items: center;
     display: flex;
+    justify-content: center;
+    height: 100%;
     justify-content: space-between;
     flex-direction: column;
     padding: 14px 16px;
 `;
+export const TextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 
 export const Title = styled.p`
     font-size: 18px;
     font-weight: 600;
     color: #333;
+
+   
 `;
 
 export const Text = styled.p`
@@ -74,4 +88,28 @@ export const Text = styled.p`
     margin-top: 12px;
     text-align: center;
     margin-bottom: 12px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
 `;
+
+export const PlusIcon = styled(MdArrowForward)`
+    font-size: 20px;
+    color: #fff;
+`
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #01bf71;
+    border: 2px solid #01bf71;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    width: 45px;
+    align-self: flex-end;
+`

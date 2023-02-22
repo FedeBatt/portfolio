@@ -3,24 +3,24 @@
         "id": 1,
         "title": "Advanta",
         "description": "En esta oportunidad me toco desarollar back office para el cliente Advanta, empresa destinada a la venta de semillas. Desarrollando la ABM siguiendo el modelo de figma. Creando componentes funcionales, dandole estilos a la web y aplicando buenas practicas.",
-        "imageUrl": "advanta_logo.jpeg"
+        "pageUrl": "https://advantaseeds.com/"
     },
     {
         "id": 2,
         "title": "Invertir En Bolsa",
         "description": "App mobile para invertir en acciones de bolsa nativa Android e iOS. Creando componentes siguiendo diseño de Figma, a su vez aplicando las mejores practicas para el desarrollo mobile. Y tambien el desarrollo de AMB para crear, visualizar, modificar y eliminar datos desde el back office.",
-        "imageUrl": "ieb_logo.png"
+        "pageUrl": "https://invertirenbolsa.com.ar/"
     },
     {
         "id": 3,
         "title": "Mperativ",
         "description": "Colaboré en el desarrollo de nuevas funcionalidades y mantenimiento de un sistema que se encuentra en producción, utilizando las mejores practicas para la solucion de las tareas diarias.",
-        "imageUrl": "mperativ_logo.jpeg"
+        "pageUrl": "https://www.mperativ.io/"
     },
     {
         "id": 4,
         "title": "Cammionity",
-        "description": "Trabajando en una aplicacion nativa Android e iOS. Como desarrollador front end mi trabajo diario consiste en crear nuevas componentes, escribir codigo limpio y analizar diferentes tipos de tareas para que sean resueltas de la mejor forma posible, de esta manera logrando un codigo mantenible y legible, tambien para que la app sea mas performante.",
-        "imageUrl": "alamedas_logo.jpeg"
+        "description": "App mobile para Android e iOS. Mi trabajo diario consiste en crear nuevas componentes, escribir codigo limpio y analizar diferentes tipos de tareas para que sean resueltas de la mejor forma posible, de esta manera logrando un codigo mantenible y legible.",
+        "pageUrl": "https://logisticalamedas.com/"
     }
 ]

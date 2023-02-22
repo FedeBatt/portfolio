@@ -4,51 +4,53 @@ import {
     CardContainer,
     CardContent,
     CardImage,
-    CardWrapper,
     ImageContainer,
     Overlay,
+    PlusIcon,
+    StyledLink,
     Text,
+    TextWrapper,
     Title,
 } from "./Card.styles";
 
-import advanta from '../../assets/advanta_logo.png'
-import ieb from '../../assets/ieb_logo.png'
-import mperativ from '../../assets/mperativ_logo.png'
-import cammionity from '../../assets/alamedas_logo.png'
+import advanta from "../../assets/advanta_logo.png";
+import ieb from "../../assets/ieb_logo.png";
+import mperativ from "../../assets/mperativ_logo.png";
+import cammionity from "../../assets/alamedas_logo.png";
+import { Link } from "react-router-dom";
 
-const Card = ({title, description}) => {
-
+const Card = ({ title, description, pageUrl }) => {
     const renderLogo = () => {
-        switch(title) {
-            case 'Advanta':
+        switch (title) {
+            case "Advanta":
                 return advanta;
-            case 'Invertir En Bolsa':
+            case "Invertir En Bolsa":
                 return ieb;
-            case 'Mperativ':
+            case "Mperativ":
                 return mperativ;
-            case 'Cammionity': 
+            case "Cammionity":
                 return cammionity;
-            default: 
-                return null
+            default:
+                return null;
         }
-    }
+    };
 
     return (
-        <CardWrapper>
-            <CardContainer>
-                <ImageContainer>
-                    <Overlay />
-                    <CardImage src={renderLogo()} />
-                </ImageContainer>
-                <CardContent>
+        <CardContainer>
+            <ImageContainer>
+                <Overlay />
+                <CardImage src={renderLogo()} />
+            </ImageContainer>
+            <CardContent>
+                <TextWrapper>
                     <Title>{title}</Title>
-                    <Text>
-                        {description}
-                    </Text>
-                    {/* <Button>Mas info</Button> */}
-                </CardContent>
-            </CardContainer>
-        </CardWrapper>
+                    <Text>{description}</Text>
+                </TextWrapper>
+                <StyledLink target="_blank" to={pageUrl}>
+                    +
+                </StyledLink>
+            </CardContent>
+        </CardContainer>
     );
 };
 
