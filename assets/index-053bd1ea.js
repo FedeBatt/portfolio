@@ -97,7 +97,6 @@ Error generating stack: `+o.message+`
     color: #fff;
     background-color: ${({lightBg:e})=>e?"#f9f9f9":"#010606"};
 
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
