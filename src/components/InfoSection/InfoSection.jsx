@@ -1,7 +1,5 @@
 import React from "react";
-import Button from "../Button/Button";
 import {
-    BtnWrapper,
     Column1,
     Column2,
     HeaderText,
@@ -24,12 +22,8 @@ const InfoSection = ({
     headLine,
     lightTextDesc,
     description,
-    buttonLabel,
     img,
     alt,
-    primary,
-    dark,
-    darkText
 }) => {
     return (
         <InfoContainer lightBg={lightBg} id={id}>
@@ -44,21 +38,6 @@ const InfoSection = ({
                             <Subtitle darkText={lightTextDesc}>
                                 {description}
                             </Subtitle>
-                            {/* <BtnWrapper>
-                                <Button
-                                    to="home"
-                                    smooth
-                                    duration={500}
-                                    spy
-                                    exact
-                                    offset={-80}
-                                    $primary={primary ? 1 : 0}
-                                    $dark={dark ? 1 : 0}
-                                    darkText={darkText ? 1 : 0}
-                                >
-                                    {buttonLabel}
-                                </Button>
-                            </BtnWrapper> */}
                         </TextWrapper>
                     </Column1>
                     <Column2>

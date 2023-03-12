@@ -3,7 +3,8 @@ import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.div`
-    background-color: #000;
+    background-color: ${({ $scrollNav }) =>
+        $scrollNav ? "#000" : "transparent"};
     height: 80px;
     /* margin-top: -80px; */
     display: flex;
@@ -92,7 +93,7 @@ export const NavBtn = styled.nav`
     @media screen and (max-width: 768px) {
         display: none;
     }
-`
+`;
 
 // export const NavBtnLink = styled(LinkRouter)`
 //     border-radius: 50px;

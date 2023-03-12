@@ -1,12 +1,9 @@
-import Button from "../Button/Button";
-
 import {
     CardContainer,
     CardContent,
     CardImage,
     ImageContainer,
     Overlay,
-    PlusIcon,
     StyledLink,
     Text,
     TextWrapper,
@@ -17,7 +14,6 @@ import advanta from "../../assets/advanta_logo.png";
 import ieb from "../../assets/ieb_logo.png";
 import mperativ from "../../assets/mperativ_logo.png";
 import cammionity from "../../assets/alamedas_logo.png";
-import { Link } from "react-router-dom";
 
 const Card = ({ title, description, pageUrl }) => {
     const renderLogo = () => {

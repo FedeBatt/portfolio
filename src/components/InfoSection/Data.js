@@ -27,7 +27,6 @@ export const homeObjTwo = {
     topLine: "Habilidades",
     headLine: "React | React Native | Angular | Vue | JavaScript | TypeScript | HTML | CSS | SCSS | Styled Components",
     description: "",
-    // buttonLabel: "Contactame!",
     imgStart: true,
     img: skills,
     alt: "Computer",
